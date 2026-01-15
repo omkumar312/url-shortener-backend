@@ -1,13 +1,6 @@
-RewriteEngine On
 RewriteBase /
-
-# --- SHORT URL HANDLER (send to backend) ---
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^[a-zA-Z0-9_-]+$ https://myurl-in.onrender.com/$0 [R=302,L]
-
-# --- REACT SPA FALLBACK ---
 RewriteRule ^index\.html$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+ RewriteCond %{REQUEST_FILENAME} !-f
+ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.html [L]
+
