@@ -64,3 +64,4 @@ export const storeClicks = async ({id, originalUrl}) => {
     console.error("Error recording click:", error);
   }
 };
+
