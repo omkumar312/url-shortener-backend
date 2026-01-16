@@ -157,7 +157,7 @@ const LinkPage = () => {
         </div> */}
 
                   </div>
-          <QRCode
+          <qr code
             value={url?.qr}
             className="w-full self-center sm:self-start ring ring-blue-500 p-1 object-contain"
           />

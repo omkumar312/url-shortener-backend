@@ -37,7 +37,7 @@ const LinkCard = ({url = [], fetchUrls}) => {
       /> */}
 
 
-      <QRCode
+      <qr code
             value={url?.qr}
             className="h-32 object-contain ring ring-blue-500 self-start"
           />
