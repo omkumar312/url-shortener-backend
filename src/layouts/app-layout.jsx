@@ -14,9 +14,9 @@ const AppLayout = () => {
         <Header />
         <Outlet />
       </main>
-      <div className="p-10 text-center bg-gray-800 mt-10">
+      <div className="mt-10 py-4 text-center text-sm text-gray-400 bg-gray-900 font-inter">
         
-        Made with @OM KUMAR
+        © 2026 MyURL — Om Kumar
       </div>
     </div>
   );

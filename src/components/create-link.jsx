@@ -105,14 +105,14 @@ export function CreateLink() {
 
         <Input
           id="title"
-          placeholder="Short Link's Title"
+          placeholder="Enter a title for your short link"
           value={formValues.title}
           onChange={handleChange}
         />
         {errors.title && <Error message={errors.title} />}
         <Input
           id="longUrl"
-          placeholder="Enter your Loooong URL"
+          placeholder="Paste your long URL here"
           value={formValues.longUrl}
           onChange={handleChange}
         />
@@ -121,7 +121,7 @@ export function CreateLink() {
           <Card className="p-2">myurl-in-n47b.onrender.com</Card> /
           <Input
             id="customUrl"
-            placeholder="Custom Link (optional)"
+            placeholder="Custom alias (optional)"
             value={formValues.customUrl}
             onChange={handleChange}
           />
