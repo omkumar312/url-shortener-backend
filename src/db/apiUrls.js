@@ -55,7 +55,11 @@ export async function createUrl({title, longUrl, customUrl, user_id}, qrcode) {
 
   if (storageError) throw new Error(storageError.message);
 
-  const qr = `${supabaseUrl}/storage/v1/object/public/qrs/${fileName}`;
+  // const qr = `${supabaseUrl}/storage/v1/object/public/qrs/${fileName}`; //  i have change this as whiile scanning the qr showing orginal link
+  const qr = `https://myurl-in-n47b.onrender.com/${customUrl || short_url}`;
+
+
+
 
   const {data, error} = await supabase
     .from("urls")
