@@ -32,10 +32,9 @@ const LinkCard = ({url = [], fetchUrls}) => {
     <div className="flex flex-col md:flex-row gap-5 border p-4 bg-gray-900 rounded-lg">
       {/* <img
         src={url?.qr}
-        className="h-32 object-contain ring ring-blue-500 self-start"  i have changed this
+        className="h-32 object-contain ring ring-blue-500 self-start"
         alt="qr code"
       /> */}
-
 
       <qr code
             // value={url?.qr || ""}
@@ -43,6 +42,7 @@ const LinkCard = ({url = [], fetchUrls}) => {
             size={180}
             className="h-32 object-contain ring ring-blue-500 self-start"
           />
+  
 
       <Link to={`/link/${url?.id}`} className="flex flex-col flex-1">
         <span className="text-3xl font-extrabold hover:underline cursor-pointer">

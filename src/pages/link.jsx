@@ -151,20 +151,18 @@ const LinkPage = () => {
           </div>
           {/* <img
             src={url?.qr}
-            className="w-full self-center sm:self-start ring ring-blue-500 p-1 object-contain"  //i have changed this
+            className="w-full self-center sm:self-start ring ring-blue-500 p-1 object-contain"
             alt="qr code"
           />
         </div> */}
 
-                  </div>
-          <qr code
+        <qr code
             // value={url?.qr || ""}
             value={`https://myurl-in-n47b.onrender.com/${url?.custom_url || url?.short_url}`}
             size={180}
             className="w-full self-center sm:self-start ring ring-blue-500 p-1 object-contain"
           />
           </div>
-
 
         <Card className="sm:w-3/5">
           <CardHeader>
