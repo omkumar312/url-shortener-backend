@@ -80,7 +80,7 @@ const LinkPage = () => {
             target="_blank"
             className="text-3xl sm:text-4xl text-blue-400 font-bold hover:underline cursor-pointer"
           >
-            https://https://myurl-n47b.onrender.com/{link}
+            https://myurl-n47b.onrender.com/{link}
           </a>
           <a
             href={url?.original_url}
