@@ -96,9 +96,16 @@ const LinkPage = () => {
           <div className="flex gap-2">
             <Button
               variant="ghost"
-              onClick={() =>
-                navigator.clipboard.writeText(`https://myurl-in-n47b.onrender.com/${link}`)
-              }
+              // onClick={() =>
+              //   navigator.clipboard.writeText(`https://myurl-in-n47b.onrender.com/${link}`)  // i have Changed it 
+              // }
+
+
+              onClick={() => {
+                const code = url?.custom_url || url?.short_url;
+                navigator.clipboard.writeText(`https://myurl.in/${code}`);
+}}
+
             >
               <Copy />
             </Button>

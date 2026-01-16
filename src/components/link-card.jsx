@@ -53,9 +53,17 @@ const LinkCard = ({url = [], fetchUrls}) => {
       <div className="flex gap-2">
         <Button
           variant="ghost"
-          onClick={() =>
-            navigator.clipboard.writeText(`https://myurl-in-n47b.onrender.com/${url?.short_url}`)
-          }
+          // onClick={() =>
+          //   navigator.clipboard.writeText(`https://myurl-in-n47b.onrender.com/${url?.short_url}`)  // i have changed  it
+          // }
+
+          onClick={() => {
+            const code = url?.custom_url || url?.short_url;
+            navigator.clipboard.writeText(`https://myurl.in/${code}`);
+}}
+
+
+
         >
           <Copy />
         </Button>
