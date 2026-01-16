@@ -51,7 +51,7 @@ const LinkCard = ({url = [], fetchUrls}) => {
         </span>
       </Link>
       <div className="flex gap-2">
-        <Button
+        {/* <Button
           variant="ghost"
           // onClick={() =>
           //   navigator.clipboard.writeText(`https://myurl-in-n47b.onrender.com/${url?.short_url}`)  // i have changed  it
@@ -59,7 +59,7 @@ const LinkCard = ({url = [], fetchUrls}) => {
 
           onClick={() => {
             const code = url?.custom_url || url?.short_url;
-            navigator.clipboard.writeText(`https://myurl.in/${code}`);
+            navigator.clipboard.writeText(`https://myurl-in-n47b.onrender.com/${code}`);
 }}
 
 
@@ -69,7 +69,30 @@ const LinkCard = ({url = [], fetchUrls}) => {
         </Button>
         <Button variant="ghost" onClick={downloadImage}>
           <Download />
-        </Button>
+        </Button> */}
+
+
+        <Button
+  variant="ghost"
+    onClick={(e) => {
+      const code = url?.custom_url || url?.short_url;
+      navigator.clipboard.writeText(`https://myurl-in-n47b.onrender.com/${code}`);
+
+      const btn = e.currentTarget;
+      btn.innerText = "Copied";
+
+      setTimeout(() => {
+        btn.innerText = "";
+        btn.appendChild(btn.firstChild); // restore icon
+      }, 1000);
+    }}
+  >
+  <Copy />
+</Button>
+
+
+
+
         <Button
           variant="ghost"
           onClick={() => fnDelete().then(() => fetchUrls())}
