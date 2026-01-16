@@ -36,7 +36,7 @@ const LinkCard = ({url = [], fetchUrls}) => {
         alt="qr code"
       /> */}
 
-      <qr code
+      <QRCode
             // value={url?.qr || ""}
             value={`https://myurl-in-n47b.onrender.com/${url?.custom_url || url?.short_url}`}
             size={180}
