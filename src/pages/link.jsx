@@ -10,6 +10,7 @@ import {Copy, Download, LinkIcon, Trash} from "lucide-react";
 import {useEffect} from "react";
 import {useNavigate, useParams} from "react-router-dom";
 import {BarLoader, BeatLoader} from "react-spinners";
+import { QRCode } from "react-qrcode-logo";  //change
 
 const LinkPage = () => {
   const downloadImage = () => {

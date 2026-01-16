@@ -5,6 +5,7 @@ import {Button} from "./ui/button";
 import useFetch from "@/hooks/use-fetch";
 import {deleteUrl} from "@/db/apiUrls";
 import {BeatLoader} from "react-spinners";
+import { QRCode } from "react-qrcode-logo";  //change
 
 const LinkCard = ({url = [], fetchUrls}) => {
   const downloadImage = () => {
