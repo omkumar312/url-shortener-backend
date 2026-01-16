@@ -33,14 +33,13 @@ const LinkCard = ({url = [], fetchUrls}) => {
     <div className="flex flex-col md:flex-row gap-5 border p-4 bg-gray-900 rounded-lg">
       {/* <img
         src={url?.qr}
-        className="h-32 object-contain ring ring-blue-500 self-start"
+        className="h-32 object-contain ring ring-blue-500 self-start"  // i have changes this
         alt="qr code"
       /> */}
 
       <QRCode
             // value={url?.qr || ""}
             value={`https://myurl-in-n47b.onrender.com/${url?.custom_url || url?.short_url}`}
-            size={180}
             className="h-32 object-contain ring ring-blue-500 self-start"
           />
   
