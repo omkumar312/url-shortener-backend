@@ -76,11 +76,11 @@ const LinkPage = () => {
             {url?.title}
           </span>
           <a
-            href={`https://myurl-n47b.onrender.com/${link}`}
+            href={`https://myurl-in-n47b.onrender.com/${link}`}
             target="_blank"
             className="text-3xl sm:text-4xl text-blue-400 font-bold hover:underline cursor-pointer"
           >
-            https://myurl-n47b.onrender.com/{link}
+            https://myurl-in-n47b.onrender.com/{link}
           </a>
           <a
             href={url?.original_url}
@@ -97,7 +97,7 @@ const LinkPage = () => {
             <Button
               variant="ghost"
               onClick={() =>
-                navigator.clipboard.writeText(`https://myurl-n47b.onrender.com/${link}`)
+                navigator.clipboard.writeText(`https://myurl-in-n47b.onrender.com/${link}`)
               }
             >
               <Copy />
