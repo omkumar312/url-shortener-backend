@@ -9,16 +9,25 @@ const __dirname = path.dirname(__filename);
 // serve your built frontend
 app.use(express.static("dist"));
 
-// 🔴 THIS REPLACES .htaccess
-app.get("/:code", (req, res, next) => {
+// 🔴 Redirect handler (REPLACES .htaccess)
+app.get("/:code", async (req, res, next) => {
   const { code } = req.params;
 
-  // example redirect (replace with Supabase later)
-  if (code === "gsh") {
-    return res.redirect(302, "https://google.com");
-  }
+  try {
+    const { data, error } = await supabase
+      .from("urls")
+      .select("original_url")
+      .or(`short_url.eq.${code},custom_url.eq.${code}`)
+      .single();
 
-  next();
+    if (!data || error) {
+      return next(); // go to SPA / 404
+    }
+
+    return res.redirect(302, data.original_url);
+  } catch (err) {
+    return next();
+  }
 });
 
 // SPA fallback
