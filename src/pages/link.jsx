@@ -148,10 +148,10 @@ const LinkPage = () => {
                 <Trash />
               )}
             </Button>
-          {/* </div>
-          <img
+          </div>
+          {/* <img
             src={url?.qr}
-            className="w-full self-center sm:self-start ring ring-blue-500 p-1 object-contain"  i have changed this
+            className="w-full self-center sm:self-start ring ring-blue-500 p-1 object-contain"  //i have changed this
             alt="qr code"
           />
         </div> */}
