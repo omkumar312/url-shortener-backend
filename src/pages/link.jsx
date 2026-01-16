@@ -159,7 +159,10 @@ const LinkPage = () => {
 
         <QRCode
             // value={url?.qr || ""}
+            // value={`https://myurl-in-n47b.onrender.com/${url?.custom_url || url?.short_url}`}
             value={`https://myurl-in-n47b.onrender.com/${url?.custom_url || url?.short_url}`}
+            size={500} 
+            style={{ width: "100%", maxWidth: 520, height: "auto" }}
             className="w-full self-center sm:self-start ring ring-blue-500 p-1 object-contain"
           />
           </div>

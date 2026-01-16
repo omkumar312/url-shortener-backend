@@ -39,6 +39,7 @@ const LinkCard = ({url = [], fetchUrls}) => {
 
       <QRCode
             // value={url?.qr || ""}
+            // value={`https://myurl-in-n47b.onrender.com/${url?.custom_url || url?.short_url}`}
             value={`https://myurl-in-n47b.onrender.com/${url?.custom_url || url?.short_url}`}
             className="h-32 object-contain ring ring-blue-500 self-start"
           />
