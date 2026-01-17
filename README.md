@@ -1,4 +1,4 @@
-# MyURL – URL Shortener App
+# MyURL – Full-Stack Scalable URL Shortening App
 
 ## Development Process
 
@@ -151,3 +151,4 @@ npm run preview
 ## Live Website:
 https://myurl-in-n47b.onrender.com
 Hosted on Render
+
