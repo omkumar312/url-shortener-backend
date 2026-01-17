@@ -145,10 +145,78 @@ npm run build
 
 ## Preview production build
 npm run preview
+```
 
 ## Deployment
 
 ## Live Website:
 https://myurl-in-n47b.onrender.com
+
 Hosted on Render
+
+# MY URL
+A full-stack URL Shortener web application that allows users to convert long URLs into short, generate QR Codes and track their usage.
+
+Deployed on Render:
+https://myurl-in-n47b.onrender.com
+
+
+<h2>Gallery</h2>
+
+
+Dashboard
+
+<img width="1919" height="1086" alt="Screenshot 2026-01-17 214355" src="https://github.com/user-attachments/assets/08753132-bac0-41b1-ba47-1f93e4f27e09" />
+
+
+
+Create New URL
+
+<img width="1915" height="1038" alt="Screenshot 2026-01-17 214524" src="https://github.com/user-attachments/assets/dc017028-c273-418f-b740-f46199a7205a" />
+
+
+
+Custom your URL
+
+<img width="1917" height="1036" alt="Screenshot 2026-01-17 214721" src="https://github.com/user-attachments/assets/9c97a821-50a0-4132-ac6a-4c8b3f45c97a" />
+
+
+
+Shorten URL with QR Code
+
+<img width="500" height="656" alt="Screenshot 2026-01-17 220621" src="https://github.com/user-attachments/assets/3cbc3f3e-9a1b-4ee4-a5ec-ad54af4e3fdc" />
+
+
+
+Redirecting...
+
+<img width="1408" height="797" alt="Screenshot 2026-01-17 220658" src="https://github.com/user-attachments/assets/3b03da80-2229-4406-b89b-697bc968f466" />
+
+
+
+Redirect to Original URL
+
+<img width="1915" height="927" alt="Screenshot 2026-01-17 220735" src="https://github.com/user-attachments/assets/6f1f6f31-b5d8-4265-ae4c-462f8079bb3b" />
+
+
+
+Authentication
+
+<img width="1536" height="635" alt="image" src="https://github.com/user-attachments/assets/dd55bb41-7b6c-437e-926e-3ad96e242530" />
+
+
+
+Create More
+
+<img width="1843" height="1084" alt="Screenshot 2026-01-17 220815" src="https://github.com/user-attachments/assets/7c5bd9bc-5760-4d31-8db5-b9e685b2d057" />
+
+
+
+Total Clicks & Live Tracking
+
+<img width="1414" height="1025" alt="image" src="https://github.com/user-attachments/assets/f2245a77-6fdb-440d-b458-14cbb433944e" />
+
+
+
+
 
